@@ -1,4 +1,4 @@
-#functions go here
+#function goes here
 def yes_no(question):
 
   while True:
