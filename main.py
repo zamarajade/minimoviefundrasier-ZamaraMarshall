@@ -1,1 +1,1 @@
-import not_blank
+import base_component
