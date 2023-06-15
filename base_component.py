@@ -1,5 +1,6 @@
 #function goes here
 
+
 #checks user has entered yes / no to a question
 def yes_no(question):
 
@@ -9,8 +10,8 @@ def yes_no(question):
       return "yes"
     elif response == "no" or response == "n":
       return "no"
-    else: print("Please enter yes or no.")
-
+    else:
+      print("Please enter yes or no.")
 
 
 #main routine goes here
@@ -20,7 +21,8 @@ MAX_TICKETS = 3
 tickets_sold = 0
 
 #ask user if they want to see instructions
-want_instructions = yes_no("Do you need instructions for this program? Y/N ").lower()
+want_instructions = yes_no(
+  "Do you need instructions for this program? Y/N ").lower()
 
 if want_instructions == "yes":
   print("Instructions go here")
@@ -40,6 +42,7 @@ while tickets_sold < MAX_TICKETS:
 #output number of tickets sold
 
 if tickets_sold < MAX_TICKETS:
-  print("You have sold {} ticket/s. There is {} ticket/s remaining".format(tickets_sold, MAX_TICKETS - tickets_sold))
+  print("You have sold {} ticket/s. There is {} ticket/s remaining".format(
+    tickets_sold, MAX_TICKETS - tickets_sold))
 else:
   print("Congratulations, you have sold all available tickets")
