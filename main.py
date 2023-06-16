@@ -1,1 +1,1 @@
-import base_component
+import payment_checker
