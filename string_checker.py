@@ -2,15 +2,23 @@
 #cash / credit based on a list of options
 def string_checker(question, num_letters, valid_responses):
 
+  error = "Please choose {} or {}".format(valid_responses[0], valid_responses[1])
+
+  if num_letters == 1:
+    short_version = 1
+  else:
+    short_version = 2
+    
+
   while True:
 
     response = input(question).lower()
 
     for item in valid_responses:
-      if response == item[0] or response == item:
+      if response == item[:short_version] or response == item:
         return item
 
-    print("Please enter a valid response")
+    print(error)
 
 
 #main routine starts here
