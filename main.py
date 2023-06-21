@@ -1,1 +1,1 @@
-import ticket_cost
+import base_component
