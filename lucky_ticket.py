@@ -45,23 +45,23 @@ print("Congratulations {}. You have won ${:.2f} ie: your ticket is free!".format
 print()
 
 #calculate ticket and profit totals
-#total = mini_movie_frame['Total'].sum()
-#profit = mini_movie_frame['Profit'].sum()
+total = mini_movie_frame['Total'].sum()
+profit = mini_movie_frame['Profit'].sum()
 
 #currency formatting (uses currency function)
-#add_dollars = ['Ticket Price', 'Surcharge', 'Total', 'Profit']
-#for var_item in add_dollars:
-  #mini_movie_frame[var_item] = mini_movie_frame[var_item].apply(currency)
+add_dollars = ['Ticket Price', 'Surcharge', 'Total', 'Profit']
+for var_item in add_dollars:
+  mini_movie_frame[var_item] = mini_movie_frame[var_item].apply(currency)
 
-#print("---- Ticket Data ----")
-#print()
+print("---- Ticket Data ----")
+print()
 
 #output table with ticket data
-#print(mini_movie_frame)
+print(mini_movie_frame)
 
-#print()
-#print("----- Ticket Cost / Profit -----")
+print()
+print("----- Ticket Cost / Profit -----")
 
 #output total ticket sales and profit
-#print("Total Ticket Sales: ${:.2f}".format(total))
-#print("Total Profit: ${:.2f}".format(profit))
+print("Total Ticket Sales: ${:.2f}".format(total))
+print("Total Profit: ${:.2f}".format(profit))

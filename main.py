@@ -1,1 +1,1 @@
-import lucky_ticket
+import base_component
