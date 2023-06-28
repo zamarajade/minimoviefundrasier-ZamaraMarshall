@@ -3,7 +3,29 @@ import random
 
 #function goes here
 
-      
+
+#shows instructions
+def show_instructions():
+    print('''\n
+***** Instructions *****
+
+For each ticket, enter...
+- The person's name (can't be blank)
+- Age (between 12 and 120)
+- Payment method (cash / credit)
+
+When you have entered all the users, press 'xxx' to quit.
+
+The program will then display the ticket details
+including the cost of each ticket, the total cost
+and the total profit.
+
+This information will also be automatically written
+to a text file.
+
+*************************''')
+  
+    
 #checks user response is not blank
 def not_blank(question):
 
@@ -89,7 +111,7 @@ mini_movie_dict = {
 want_instructions = string_checker("Do you want to read the instructions (y/n): ",1, yes_no_list)
 
 if want_instructions == "yes":
-  print("Instructions go here")
+  show_instructions()
 
 print()
 
