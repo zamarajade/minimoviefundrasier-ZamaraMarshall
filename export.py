@@ -48,7 +48,7 @@ total_won = mini_movie_frame.at[win_index, 'Total']
 #set index at end (before printing)
 #mini_movie_frame = mini_movie_frame.set_index('Name')
 #print(mini_movie_frame)
-
+ 
 # **** Get current date for heading and filename ****
 #get todays date
 today = date.today()

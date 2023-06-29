@@ -1,1 +1,1 @@
-import show_instructions
+import base_component
